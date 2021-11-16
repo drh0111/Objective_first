@@ -50,7 +50,7 @@ error(2) = std(pow_m);
 
 ratio = mpow_m / mpow_t;
 
-fprintf(' Mean total power: %.2f\n error: %.2f\n Mean mode power: %.2f\n error: %.2f\n Ratio: %.2f\n ',...
+fprintf(' Mean total power: %.2f\n Error: %.2f\n Mean mode power: %.2f\n Error: %.2f\n Ratio: %.2f\n ',...
     mpow_t, error(1), mpow_m, error(2), ratio);
 end
 
