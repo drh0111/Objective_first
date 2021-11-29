@@ -52,7 +52,7 @@ input.k = angle(prob.Hz(2, end/2) / prob.Hz(1, end/2));
     %
     
 % simulate the model
-[Ex_w, Ey_w, Hz_w] = fdfd_2d(repmat(eps(1, :), dims(1), 1), input, ...
+[~, Ey_w, Hz_w] = fdfd_2d(repmat(eps(1, :), dims(1), 1), input, ...
                         prob.omega, prob.bc); % only consider the waveguide to get input power
 [Ex, Ey, Hz] = fdfd_2d(eps, input, prob.omega, prob.bc); % consider the structure to get output power
 
